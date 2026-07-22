@@ -60,11 +60,3 @@ The design is verified using a single, sequential, self-checking Verilog testben
 **Result Reporting**
 - The testbench prints `[PASS]` or `[FAIL]` for every checked transaction
 - A final summary reports total checks performed and total errors found
-- Simulated using **Icarus Verilog**:
-
-```bash
-iverilog -o sim.out true_dual_port_ram.v tb_true_dual_port_ram.v
-vvp sim.out
-```
-
-All checks pass with zero functional errors across the full test run.
